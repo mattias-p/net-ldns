@@ -4,7 +4,6 @@ use Devel::Peek;
 use Zonemaster::LDNS;
 
 my $rrl = Zonemaster::LDNS::Packet->new( 'foo.com', 'SOA', 'IN' )->all;
-$rrl->pop;
 
 SKIP: {
     skip 'no network', 3 unless $ENV{TEST_WITH_NETWORK};
