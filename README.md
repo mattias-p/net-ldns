@@ -11,6 +11,11 @@ If you want a module that specifically aims to be a complete and transparent int
 
 Initially this module was named Net::LDNS.
 
+## Recommended installation
+
+The recommended way to install Zonemaster::LDNS is to install it from CPAN as a dependency to Zonemaster::Engine. If you follow the [installation instructions for Zonemaster::Engine](https://github.com/dotse/zonemaster-engine/blob/master/docs/Installation.md) you will get all the prerequisites for Zonemaster::LDNS before installing it from CPAN.
+
+For installation from from source, see below.
 
 ## Optional features
 
@@ -73,13 +78,7 @@ Test-time dependencies:
  * `Test::Fatal`
 
 
-## Installation
-
-### Recommended installation
-
-The recommended way to install Zonemaster::LDNS is to install it from CPAN as a dependency to Zonemaster::Engine. If you follow the [installation instructions for Zonemaster::Engine](https://github.com/dotse/zonemaster-engine/blob/master/docs/Installation.md) you will get all the prerequisites for Zonemaster::LDNS before installing it from CPAN.
-
-### Installation from source
+## Installation from source
 
 Override the default set of features by appending `--FEATURE` and/or
 `--no-FEATURE` options to the `perl Makefile.PL` command.
