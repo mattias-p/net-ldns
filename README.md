@@ -53,7 +53,7 @@ There is a small part in the code that may not be compatible with non-Unix opera
 
 ### Recommended installation
 
-The recommended way to install Zonemaster::LDNS is to install it from CPAN as a dependency to Zonemaster::Engine. If you follow the [installation instructions for Zonemaster::Engine](https://github.com/dotse/zonemaster-engine/blob/master/docs/Installation.md) you will get all the prerequisites for Zonemaster::LDNS before installing it from CPAN.
+The recommended way to install Zonemaster::LDNS is to install it from CPAN as a dependency to Zonemaster::Engine. If you follow the [installation instructions for Zonemaster::Engine](https://github.com/dotse/zonemaster-engine/blob/master/docs/Installation.md) you will get all the prerequisites and dependencies for Zonemaster::LDNS before installing it from CPAN.
 
 ### Installation from source
 
