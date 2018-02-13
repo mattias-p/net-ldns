@@ -4,8 +4,7 @@ Zonemaster LDNS
 **Table of contents**
 
 * [Introduction](#introduction)
-  * [Dependencies](#dependencies)
-  * [Compatibility](#compatibility)
+* [Dependencies and Compatibility](#dependencies-and-compatibility)
 * [Installation and verification](#installation-and-verification)
   * [Recommended installation](#recommended-installation)
   * [Installation from source](#installation-from-source)
@@ -27,7 +26,7 @@ If you want a module that specifically aims to be a complete and transparent int
 
 Initially this module was named Net::LDNS.
 
-## Dependencies
+## Dependencies and compatibility
 
 Run-time dependencies:
  * `openssl`
@@ -44,8 +43,6 @@ Compile-time dependencies (only when installing from source):
 
 Test-time dependencies:
  * `Test::Fatal`
-
-## Compatibility
 
 There is a small part in the code that may not be compatible with non-Unix operating systems, in that it assumes that the file /dev/null exists.
 
