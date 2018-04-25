@@ -24,6 +24,7 @@ GetOptions(
 );
 
 configure_requires 'Devel::CheckLib';
+configure_requires 'ExtUtils::MakeMaker' => 6.59;
 requires 'MIME::Base64';
 test_requires 'JSON::PP';
 test_requires 'Test::Fatal';
