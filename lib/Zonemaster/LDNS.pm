@@ -14,6 +14,19 @@ XSLoader::load( __PACKAGE__, $VERSION );
 use Zonemaster::LDNS::RR;
 use Zonemaster::LDNS::Packet;
 
+sub query {
+    my ( $self, $dname, $rrtype, $rrclass ) = @_;
+    $rrtype  //= 'A';
+    $rrclass //= 'IN';
+
+    my $packet = Zonemaster::LDNS::Packet->new( $dname, $rrtype, $rrclass );
+
+    $packet->rd( $self->recurse );
+    $packet->cd( $self->cd );
+
+    return $self->query_with_pkt( $packet );
+}
+
 1;
 
 =head1 NAME
